@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Finder</title>
+    <link rel="shortcut icon" href="img/JOB FINDER.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"    
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+     crossorigin="anonymous" defer></script>
+
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <div class="container" id="sendjobs">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <a href="index.html">
+                        <img id="logo" src="img/Logo.png" alt="Job Finder">
+                    </a>
+                    <i class="fas fa-bars btn-menumobile"></i>
+                    <ul>
+                        <li><a href="findjobs.html">Find Job</a></li>
+                        <li><a href="sendjobs.html">Send Job</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="sendjobs-container" class="wrapper">
+        <h1>Fill in the job details</h1>
+            <form action="">
+                <div class="input-box">
+                    <label>Job Title <span class="required">*</span></label>
+                    <input type="text" name="jobtitle" id="jobtitle"placeholder="Input the Job Title">
+                </div>
+                <div class="input-box">
+                    <label>Job Description <span class="required">*</span></label>
+                    <textarea type="text" name="description" placeholder="Input the Job Description"></textarea>
+                </div>
+                <div class="input-box">
+                    <label>Company Name <span class="required">*</span></label>
+                    <input type="text" name="company" placeholder="Input the Company Name">
+                </div>
+                <div class="input-box">
+                    <label>Hiring type <span class="required">*</span></label>
+                    <select name="jobtype">
+                        <option value="" id="chooseoption">Choose an option</option>
+                        <option value="pj">PJ</option>
+                        <option value="clt">CLT</option>
+                        <option value="homeoffice">Home Office</option>
+                        <option value="freelancer">Freelancer</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </main>
+      <footer>
+          <div class="wrapper">
+              <div class="footer-box">
+                  <div class="company-footer">
+                      <img src="img/Logo.png" alt="">
+                      <h4>The easiest way to find your next job.</h4>
+                  </div>
+              </div>
+              <div class="footer-box">
+                  <div class="articles-footer">
+                      <h2>Recent articles</h2>
+                      <ul class="footer-list footer-article-list">
+                          <li>
+                            <a href="#">How to get your first job in time of crisis.</a>
+                            <span class="article-date">June 10th, 2020</span>
+                          </li>
+                          <li>
+                            <a href="#">And do you prefer to work in the Home Office or in the office?</a>
+                            <span class="article-date">July 20th, 2020</span>
+                          </li>
+                          <li>
+                            <a href="#">How to develop your career.</a>
+                            <span class="article-date">August 2nd, 2020</span>
+                          </li>             
+                      </ul>
+                  </div>
+              </div>
+              <div class="footer-box">
+                  <h2>Find us on social media</h2>
+                  <ul class="footer-list">
+                      <li>
+                          <a href="#">
+                              <i class="fab fa-facebook-square"></i>
+                              <span>Facebook</span>
+                          </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                            <span>Linkedin</span>
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="wrapper">
+                  <p>PRA Web - 2020</p>
+              </div>
+          </div>
+      </footer>
+    </div>
+</body>
+</html>
